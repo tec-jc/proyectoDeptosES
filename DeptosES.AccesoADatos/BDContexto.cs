@@ -18,7 +18,7 @@ namespace DeptosES.AccesoADatos
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer(@"Data Source=JC-PC;Initial Catalog=ProyectoEjemplo;Integrated Security=True");
+            optionsBuilder.UseSqlServer(@"Data Source=JC-PC;Initial Catalog=ProyectoEjemplo;Integrated Security=True; encrypt = false; trustServerCertificate = false");
             //optionsBuilder.UseSqlServer(@"Data Source=deptosDB.mssql.somee.com; Initial Catalog=deptosDB; User Id=deptosProject; Pwd=admin2022");
         }
     }
